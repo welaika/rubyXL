@@ -9,6 +9,7 @@ module RubyXL
     # Since we have no capability to load the actual fonts, we'll have to live with the default.
     MAX_DIGIT_WIDTH = 7 # Calibri 11 pt @ 96 dpi
 
+    define_child_node(RubyXL::FloatValue,   :node_name => :sz)
     define_child_node(RubyXL::StringValue,  :node_name => :name)
     define_child_node(RubyXL::IntegerValue, :node_name => :charset)
     define_child_node(RubyXL::IntegerValue, :node_name => :family)
@@ -20,7 +21,6 @@ module RubyXL
     define_child_node(RubyXL::BooleanValue, :node_name => :condense)
     define_child_node(RubyXL::BooleanValue, :node_name => :extend)
     define_child_node(RubyXL::Color)
-    define_child_node(RubyXL::FloatValue,   :node_name => :sz)
     define_child_node(RubyXL::BooleanValue, :node_name => :u)
     define_child_node(RubyXL::StringValue,  :node_name => :vertAlign)
     define_child_node(RubyXL::StringValue,  :node_name => :scheme)
